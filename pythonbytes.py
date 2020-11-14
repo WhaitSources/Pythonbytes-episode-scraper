@@ -4,7 +4,7 @@ from selectolax.parser import HTMLParser
 import concurrent.futures
 
 base_url = 'https://pythonbytes.fm'
-headers = {}
+headers = {"user-agent": "Mozilla/5.0 (Windows NT 11.5; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3629.169 Safari/537.36"}
 output_dir = 'MP3s/'
 
 if not os.path.isdir(output_dir):
